@@ -7,7 +7,7 @@
      #navbar  a {font-size: 18px;}
    }
   header{
-    position:fixed;
+    position:flex;
   }
    #contact-block{
       padding: 20px;
