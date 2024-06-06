@@ -1,33 +1,32 @@
-/* style.css */
-
-/* Resetting default margin and padding */
-body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+* {
   margin: 0;
   padding: 0;
-}
-
-/* Setting default font and box-sizing */
-body {
-  font-family: Arial, sans-serif;
   box-sizing: border-box;
 }
 
-/* Container */
+body {
+  font-family:
+    Arial,
+    sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
 }
 
-/* Header */
 #header {
   background-color: #333;
   color: #fff;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .logo img {
-  height: 50px;
+  height: 40px;
   width: auto;
 }
 
@@ -37,7 +36,6 @@ body {
   margin-right: 20px;
 }
 
-/* Hero Section */
 #hero {
   text-align: center;
   padding: 100px 0;
@@ -47,17 +45,25 @@ body {
   width: 300px;
   padding: 10px;
   margin-bottom: 10px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
 }
 
 #submit {
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #ff7f0e;
   color: #fff;
   border: none;
+  border-radius: 20px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Features Section */
+#submit:hover {
+  background-color: #ff9500;
+}
+
 #features {
   padding: 50px 0;
 }
@@ -71,11 +77,11 @@ body {
 
 .icon {
   margin-right: 20px;
+  color: #ff7f0e;
 }
 
-/* Pricing Section */
 #pricing {
-  background-color: #f4f4f4;
+  background-color: #fff;
   padding: 50px 0;
 }
 
@@ -84,6 +90,13 @@ body {
   margin-bottom: 30px;
   padding: 20px;
   border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  transition: box-shadow 0.3s ease;
+}
+
+.product:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .level {
@@ -93,13 +106,23 @@ body {
 
 .btn {
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #ff7f0e;
   color: #fff;
   border: none;
+  border-radius: 20px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Footer */
+.btn:hover {
+  background-color: #ff9500;
+}
+
+#video {
+  width: 100%;
+  height: 360px;
+}
+
 footer {
   background-color: #333;
   color: #fff;
@@ -119,4 +142,19 @@ footer ul li {
 footer ul li a {
   color: #fff;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    flex-wrap: wrap;
+  }
+
+  .grid > * {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+
+  #video {
+    height: 240px;
+  }
 }
