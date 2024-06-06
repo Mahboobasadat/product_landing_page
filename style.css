@@ -1,98 +1,122 @@
-* {
-  background-color: #ffe32bf2;
-  font-family:
-    'Courier New',
-    Courier,
-    monospace;
-  padding: 0;
+/* style.css */
+
+/* Resetting default margin and padding */
+body, h1, h2, h3, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
   margin: 0;
+  padding: 0;
 }
 
-img {
-  width: 100%;
-  object-fit: cover;
-  height: 80px;
-  margin: 10px 40px;
+/* Setting default font and box-sizing */
+body {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
-h2,
-p {
-  font-family:
-    'Raleway',
-    sans-serif;
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-a {
-  text-decoration: none;
-  color: linen;
-}
-
-#hero {
-  grid-column: 1 / -1;
-  position: relative;
-  text-align: center;
-}
-
-header {
-  justify-content: flex-end;
-  position: positioned;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: none;
-  width: 100%;
-  top: 0;
-  left: 0;
-  padding: 1em;
-}
-
-@media only screen and (max-width: 720px) {
-  .image-wrapper {
-    grid-template-columns: 1fr;
-  }
-
-  i {
-    color: yellow;
-  }
-
-  #submit {
-    background-color: yellow;
-  }
-
-  input {
-    font-weight: bold;
-    font-size: 15px;
-  }
-
-  .btn {
-    color: blue;
-  }
-}
-
-#nav-bar {
-  position: fixed;
-  top: 0;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  color: #fff;
-  background-color: lightcoral;
-  width: 100%;
-}
-
-#nav-bar a {
-  text-decoration: none;
-  color: #fff;
-  font-size: large;
-  font-weight: bold;
-  padding: auto;
-  margin: 20px 20px;
-}
-
+/* Header */
 #header {
-  background-color: black;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
 }
 
-#nav-bar a:hover {
-  color: black;
-  text-decoration: underline;
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  padding: 100px 0;
+}
+
+#email {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#submit {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Features Section */
+#features {
+  padding: 50px 0;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.icon {
+  margin-right: 20px;
+}
+
+/* Pricing Section */
+#pricing {
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+.product {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.level {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
 }
