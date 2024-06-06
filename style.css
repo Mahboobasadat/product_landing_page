@@ -1,5 +1,11 @@
 * {
   background-color: #ffe32bf2;
+  font-family:
+    'Courier New',
+    Courier,
+    monospace;
+  padding: 0;
+  margin: 0;
 }
 
 img {
@@ -54,19 +60,10 @@ header {
     font-weight: bold;
     font-size: 15px;
   }
-  
+
   .btn {
     color: blue;
   }
-}
-
-* {
-  font-family:
-    'Courier New',
-    Courier,
-    monospace;
-  padding: 0;
-  margin: 0;
 }
 
 #nav-bar {
